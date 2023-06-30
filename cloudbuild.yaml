@@ -33,4 +33,4 @@ steps:
       - "--port"
       - "5000"
 options:
-  logging: NONE
+  logging: CLOUD_LOGGING_ONLY
