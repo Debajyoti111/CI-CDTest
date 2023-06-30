@@ -32,5 +32,5 @@ steps:
       - "--allow-unauthenticated"
       - "--port"
       - "5000"
-      - '--logging'
-      - 'none'
+options:
+  logging: CLOUD_LOGGING_ONLY
