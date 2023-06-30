@@ -1,13 +1,7 @@
 steps:
   # Build the Docker image
   - name: "gcr.io/cloud-builders/docker"
-    args:
-      [
-        "build",
-        "-t",
-        "us-central1-docker.pkg.dev/stunning-saga-386406/test-repo/flask-server:latest",
-        ".",
-      ]
+    args: ["build", "-t", "flask-server:latest", "."]
 
   # Push the Docker image to Artifact Registry
   - name: "gcr.io/cloud-builders/docker"
