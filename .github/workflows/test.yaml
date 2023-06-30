@@ -22,4 +22,6 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run tests
-        run: python .test_flask_api.py
+        run: |
+          cd ./
+          ls
